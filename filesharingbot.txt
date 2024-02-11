@@ -1,0 +1,774 @@
+[11-Feb-24 20:52:37 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[11-Feb-24 20:52:49 - ERROR] - pyrogram.dispatcher - bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "E:\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+  File "E:\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1453, in _retry_internal
+    return _ClientConnectionRetryable(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2439, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1330, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1252, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1637, in checkout
+    conn = self._get_conn(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1756, in _get_conn
+    conn = self.connect(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1607, in connect
+    conn.authenticate()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1078, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 625, in authenticate
+    auth_func(credentials, conn)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 530, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 298, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\network.py", line 192, in command
+    helpers._check_command_response(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 230, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+[11-Feb-24 20:59:48 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 20:59:48 - INFO] - bot - Bot stopped.
+[11-Feb-24 20:59:48 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:00:00 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[11-Feb-24 21:00:11 - ERROR] - pyrogram.dispatcher - bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "E:\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+  File "E:\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1453, in _retry_internal
+    return _ClientConnectionRetryable(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2439, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1330, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1252, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1637, in checkout
+    conn = self._get_conn(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1756, in _get_conn
+    conn = self.connect(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1607, in connect
+    conn.authenticate()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1078, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 625, in authenticate
+    auth_func(credentials, conn)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 530, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 298, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\network.py", line 192, in command
+    helpers._check_command_response(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 230, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+[11-Feb-24 21:01:25 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:01:25 - INFO] - bot - Bot stopped.
+[11-Feb-24 21:01:25 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:01:36 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[11-Feb-24 21:01:44 - ERROR] - pyrogram.dispatcher - bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "E:\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+  File "E:\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1453, in _retry_internal
+    return _ClientConnectionRetryable(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2439, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1330, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1252, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1637, in checkout
+    conn = self._get_conn(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1756, in _get_conn
+    conn = self.connect(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1607, in connect
+    conn.authenticate()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1078, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 625, in authenticate
+    auth_func(credentials, conn)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 530, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 298, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\network.py", line 192, in command
+    helpers._check_command_response(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 230, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+[11-Feb-24 21:11:10 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:11:10 - INFO] - bot - Bot stopped.
+[11-Feb-24 21:11:10 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:11:11 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:11:29 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[11-Feb-24 21:12:10 - ERROR] - pyrogram.dispatcher - bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "E:\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+  File "E:\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1453, in _retry_internal
+    return _ClientConnectionRetryable(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2439, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1330, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1252, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1637, in checkout
+    conn = self._get_conn(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1756, in _get_conn
+    conn = self.connect(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1607, in connect
+    conn.authenticate()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1078, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 625, in authenticate
+    auth_func(credentials, conn)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 530, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 298, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\network.py", line 192, in command
+    helpers._check_command_response(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 230, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+[11-Feb-24 21:15:34 - ERROR] - pyrogram.dispatcher - bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "E:\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+  File "E:\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1453, in _retry_internal
+    return _ClientConnectionRetryable(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2439, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1330, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1252, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1637, in checkout
+    conn = self._get_conn(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1756, in _get_conn
+    conn = self.connect(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1607, in connect
+    conn.authenticate()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1078, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 625, in authenticate
+    auth_func(credentials, conn)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 530, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 298, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\network.py", line 192, in command
+    helpers._check_command_response(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 230, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+[11-Feb-24 21:15:41 - ERROR] - pyrogram.dispatcher - bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "E:\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+  File "E:\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1453, in _retry_internal
+    return _ClientConnectionRetryable(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2439, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1330, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1252, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1637, in checkout
+    conn = self._get_conn(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1756, in _get_conn
+    conn = self.connect(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1607, in connect
+    conn.authenticate()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1078, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 625, in authenticate
+    auth_func(credentials, conn)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 530, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 298, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\network.py", line 192, in command
+    helpers._check_command_response(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 230, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+[11-Feb-24 21:17:12 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[11-Feb-24 21:17:28 - ERROR] - pyrogram.dispatcher - bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "E:\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+  File "E:\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1453, in _retry_internal
+    return _ClientConnectionRetryable(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2439, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1330, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1252, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1637, in checkout
+    conn = self._get_conn(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1756, in _get_conn
+    conn = self.connect(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1607, in connect
+    conn.authenticate()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1078, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 625, in authenticate
+    auth_func(credentials, conn)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 530, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 298, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\network.py", line 192, in command
+    helpers._check_command_response(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 230, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+[11-Feb-24 21:34:31 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:34:31 - INFO] - bot - Bot stopped.
+[11-Feb-24 21:34:32 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:44:04 - ERROR] - pyrogram.dispatcher - bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "E:\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+  File "E:\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1453, in _retry_internal
+    return _ClientConnectionRetryable(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2439, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1330, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1252, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1637, in checkout
+    conn = self._get_conn(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1756, in _get_conn
+    conn = self.connect(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1607, in connect
+    conn.authenticate()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1078, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 625, in authenticate
+    auth_func(credentials, conn)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 530, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 298, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\network.py", line 192, in command
+    helpers._check_command_response(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 230, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+[11-Feb-24 21:44:05 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[11-Feb-24 21:44:30 - ERROR] - pyrogram.dispatcher - bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "E:\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+  File "E:\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\collection.py", line 1506, in find_one
+    for result in cursor.limit(-1):
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1264, in next
+    if len(self.__data) or self._refresh():
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1181, in _refresh
+    self.__send_message(q)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\cursor.py", line 1060, in __send_message
+    response = client._run_operation(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1394, in _run_operation
+    return self._retryable_read(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1492, in _retryable_read
+    return self._retry_internal(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\_csot.py", line 107, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1453, in _retry_internal
+    return _ClientConnectionRetryable(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2315, in run
+    return self._read() if self._is_read else self._write()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 2439, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1330, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\mongo_client.py", line 1252, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1637, in checkout
+    conn = self._get_conn(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1756, in _get_conn
+    conn = self.connect(handler=handler)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1607, in connect
+    conn.authenticate()
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 1078, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 625, in authenticate
+    auth_func(credentials, conn)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 530, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\auth.py", line 298, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 322, in inner
+    return func(*args, **kwargs)
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\pool.py", line 968, in command
+    return command(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\network.py", line 192, in command
+    helpers._check_command_response(
+  File "E:\File-Sharing-Bot-main\myenv\lib\site-packages\pymongo\helpers.py", line 230, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+[11-Feb-24 21:45:06 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:45:06 - INFO] - bot - Bot stopped.
+[11-Feb-24 21:45:25 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[11-Feb-24 21:51:20 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:51:20 - INFO] - bot - Bot stopped.
+[11-Feb-24 21:51:21 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 21:51:33 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[11-Feb-24 22:09:25 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 22:09:25 - INFO] - bot - Bot stopped.
+[11-Feb-24 22:09:25 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 22:09:43 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[11-Feb-24 22:10:38 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 22:10:38 - INFO] - bot - Bot stopped.
+[11-Feb-24 22:10:39 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 22:11:00 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[11-Feb-24 22:12:20 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 22:12:20 - INFO] - bot - Bot stopped.
+[11-Feb-24 22:12:21 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[11-Feb-24 23:54:17 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[12-Feb-24 00:17:28 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:17:39 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:20:31 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:20:42 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:20:53 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:20:54 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:21:04 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:21:15 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:21:38 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:21:49 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:22:00 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:22:01 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:22:11 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:22:22 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:22:33 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:22:34 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:22:44 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:22:55 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:23:06 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:23:07 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:17 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[12-Feb-24 00:23:18 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:19 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:20 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:20 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:21 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:22 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:23 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:23 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:24 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:25 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:26 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:26 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:27 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:28 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:29 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:29 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:30 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:31 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:32 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:32 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:33 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:34 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:35 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:35 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:36 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:37 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:38 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:38 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:39 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:40 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:41 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:41 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:42 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:43 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:44 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:44 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:45 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:46 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:47 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:47 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:48 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:49 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:50 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:50 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:51 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:52 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:53 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:53 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:54 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:55 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:56 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:56 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:57 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:58 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:23:59 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:23:59 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:00 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:01 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:02 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:24:02 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:03 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:04 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:05 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:24:05 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:06 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:07 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:08 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:24:08 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:09 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:10 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:11 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:24:11 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:12 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:13 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:14 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:24:14 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:15 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:16 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:17 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:24:17 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:18 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:19 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:20 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:24:20 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:21 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:22 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:24 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:24:24 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:25 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:26 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:27 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[12-Feb-24 00:24:27 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:24:28 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[12-Feb-24 00:28:30 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[12-Feb-24 00:28:30 - INFO] - bot - Bot stopped.
+[12-Feb-24 00:28:31 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[12-Feb-24 00:28:31 - INFO] - root - Stop signal received (SIGINT). Exiting...
