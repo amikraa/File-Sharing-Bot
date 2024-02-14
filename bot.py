@@ -1,4 +1,5 @@
 #(©)Codexbotz
+-*- coding: utf-8 -*-
 
 from aiohttp import web
 from plugins import web_server
